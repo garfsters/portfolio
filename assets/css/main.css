@@ -4690,11 +4690,82 @@ input, select, textarea {
 	}
 
 /* Serenity Profile Photo */
-.profile-photo {
-	width: 100px;
-	height: 100px;
-	object-fit: cover;
-	margin-bottom: 1.5em;
+
+#intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4em 2em;
+  background: #0d0d0d; /* keep for now until we add city background */
+  min-height: 100vh;
 }
+
+.intro-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* stacks on smaller screens */
+  width: 100%;
+  max-width: 1100px;
+}
+
+.intro-left {
+  flex: 1;
+  min-width: 300px;
+  color: #fff;
+}
+
+.intro-left h1 {
+  font-size: 3em;
+  margin-bottom: 0.3em;
+}
+
+.intro-left p {
+  font-size: 1.5em;
+  color: #aaa;
+}
+
+.intro-left .actions {
+  margin-top: 1.5em;
+}
+
+.intro-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 250px;
+}
+
+.profile-photo {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+
+/* Responsive tweak for smaller screens */
+@media (max-width: 768px) {
+  #intro {
+    padding: 2em 1em;
+  }
+
+  .intro-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .intro-left h1 {
+    font-size: 2em;
+  }
+
+  .profile-photo {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 1em;
+  }
+}
+
+
 
 
