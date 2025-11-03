@@ -1,2 +1,1 @@
-# Serenity Smith Portfolio Website
----
+Serenity Smith Portfolio Website
