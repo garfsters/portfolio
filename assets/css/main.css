@@ -5,6 +5,7 @@
 	Massively by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
 */
 
 html, body, div, span, applet, object,
@@ -4687,3 +4688,13 @@ input, select, textarea {
 		}
 
 	}
+
+/* Serenity Profile Photo */
+.profile-photo {
+	width: 220px;
+	height: 220px;
+	border-radius: 50%
+	object-fit: cover;
+	border: 3px solid white;
+	margin-bottom: 1.5em;
+}
